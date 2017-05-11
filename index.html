@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Happy Hour Generator</title>
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Rubik:300" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        height: 100%;
+        font-family: 'Rubik', Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        background-color: #111;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        background-color: #111;
+        background-image: url('background.jpg');
+        background-size: cover;
+      }
+      .wrapper {
+        margin: 1em;
+        flex-basis: 45em;
+        padding: 5em 1em;
+        text-align: center;
+        border: 2px solid #fff;
+      }
+
+      h1 {
+        margin: 0 auto .5em;
+        font-family: 'Cookie', cursive;
+        font-size: 6em;
+        line-height: .8;
+        text-shadow: 0 0 .5em #000;
+        color: #eee;
+      }
+      h1 span {
+        display: block;
+        font-weight: 400;
+        font-size: .64em;
+        color: #fff;
+      }
+
+      .input {
+        max-width: 18em;
+        width: 100%;
+        padding: 1em;
+        font-family: 'Rubik', Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        background: transparent;
+        border: 0;
+        border-bottom: 2px solid #fff;
+        font-weight: 300;
+      }
+    </style>
+  </head>
+  <body>
+
+    <main class="wrapper">
+      <h1>Happy Hour <span>Theme Generator</span></h1>
+      <input class="input" type="text" value="May 12th 2017">
+    </main>
+
+    <!-- Javascript -->
+    <script src="blah.min.js"></script>
+  </body>
+</html>
