@@ -5,121 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Happy Hour Generator</title>
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
 
-    <title>Happy Hour Generator</title>
-
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Cookie|Rubik:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- TODO: Swap with SVGs -->
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      html, body {
-        margin: 0;
-        height: 100%;
-        font-family: 'Rubik', Helvetica, Arial, sans-serif;
-        line-height: 1.5;
-        background-color: #111;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        background-color: #111;
-        background-image: url('background2.jpg');
-        background-size: cover;
-      }
-      .wrapper {
-        margin: 1em;
-        padding: 1em;
-        flex-basis: 100%;
-        text-align: center;
-      }
-
-      h1 {
-        margin: 0 auto 3rem;
-        font-family: 'Cookie', cursive;
-        font-size: 7em;
-        line-height: .8;
-        text-shadow: 0 0 .5em #000;
-      }
-      h1 span {
-        display: block;
-        margin-bottom: 1rem;
-        font-weight: 400;
-        font-size: 3.2rem;
-        color: #ddd;
-      }
-
-      .cta {
-        position: relative;
-        display: inline-block;
-        max-width: 15em;
-        width: 100%;
-        margin: 1em;
-        padding: 1em;
-        font-size: 1.2em;
-        text-transform: uppercase;
-        border: 2px solid #fff;
-        cursor: pointer;
-        transition: color .3s ease-out;
-      }
-      .cta .fa {
-        margin-right: .7em;
-        color: #ffff86;
-        transition: color .3s ease-out;
-      }
-      .cta span {
-        position: relative;
-        z-index: 1;
-      }
-      .cta::before {
-        z-index: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: "";
-        background-color: #fff;
-        transform: scaleX(0);
-        transition: transform .3s ease-out;
-      }
-      .cta:hover, .cta:focus,
-      .cta:hover .fa, .cta:focus .fa {
-        color: #000;
-      }
-      .cta:hover::before, .cta:focus::before {
-        transform: scaleX(1);
-      }
-
-      .cta-food::before {
-        transform-origin: left;
-      }
-      .cta-drink::before {
-        transform-origin: center;
-      }
-      .cta-music::before {
-        transform-origin: right;
-      }
-    </style>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- TODO: Swap with SVGs -->
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="results">
 
-    <main class="wrapper">
-      <h1>
+    <main class="results__wrapper">
+      <h1 class="results__heading">
         <span>your theme:</span>
         Cats of the Internet
       </h1>
@@ -143,6 +44,11 @@
         </span>
       </a>
     </main>
+
+    <a class="reroll" href="#">
+      <i class="fa fa-refresh"></i>
+      No way, Jose. Give me another idea!
+    </a>
 
     <!-- Javascript -->
     <script src="blah.min.js"></script>

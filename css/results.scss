@@ -1,0 +1,109 @@
+body.results {
+  background-image: url('../images/background2.jpg');
+}
+
+.results__wrapper {
+  margin: 1em;
+  padding: 1em;
+  flex-basis: 100%;
+
+  @media (min-width: $mq-xsmall) {
+    margin-top: 7em;
+  }
+}
+
+.results__heading {
+  margin-bottom: 3rem;
+  font-size: 6em;
+  color: $color-lightest;
+
+  @media (min-width: $mq-xsmall) {
+    font-size: 7em;
+  }
+
+  span {
+    margin-bottom: .5em;
+    color: $color-lightest;
+
+    @media (min-width: $mq-xsmall) {
+      margin-bottom: .4em;
+    }
+  }
+}
+
+.cta {
+  position: relative;
+  display: inline-block;
+  max-width: 15em;
+  width: 100%;
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border: 2px solid $color-lightest;
+  cursor: pointer;
+  transition: color .3s ease-out;
+
+  .fa {
+    margin-right: .7em;
+    color: $color-accent;
+    transition: color .3s ease-out;
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: $color-lightest;
+    transform: scaleX(0);
+    transition: transform .3s ease-out;
+  }
+
+  &:hover,
+  &:focus,
+  &:hover .fa,
+  &:focus .fa {
+    color: $color-darkest;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    transform: scaleX(1);
+  }
+}
+.cta-food::before {
+  transform-origin: left;
+}
+.cta-drink::before {
+  transform-origin: center;
+}
+.cta-music::before {
+  transform-origin: right;
+}
+
+.reroll {
+  flex-basis: 100%;
+  align-self: flex-end;
+  padding: 1.5em;
+  text-align: center;
+  color: $color-light;
+
+  .fa {
+    margin-right: .5em;
+    transition: transform 5s linear;
+  }
+
+  &:hover .fa,
+  &:focus .fa {
+    transform: rotate(1080deg);
+  }
+}

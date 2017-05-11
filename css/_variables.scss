@@ -1,0 +1,26 @@
+/*----------------------------------------------
+  Color variables
+-----------------------------------------------*/
+$color-lightest: #fff;
+$color-light:    #eee;
+$color-dark:     #111;
+$color-darkest:  #000;
+
+$color-accent:   #ffff86;
+
+/*----------------------------------------------
+  Typography variables
+-----------------------------------------------*/
+$font-heading: 'Cookie', cursive;
+$font-body:    'Rubik', Helvetica, Arial, sans-serif;
+
+/*----------------------------------------------
+  Media Query breakpoints
+-----------------------------------------------*/
+$mq-xxsmall: 24em; // Phones (Landscape) - anything smaller is in portrait
+$mq-xsmall:  40em; // Tablet
+$mq-small:   64em; // Netbook
+$mq-medium:  80em; // Laptop
+$mq-large:   100em; // Mid Size monitor
+$mq-xlarge:  120em; // Desktop
+$mq-xxlarge: 140em; // Thunderbolt
