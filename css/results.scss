@@ -23,6 +23,7 @@ body.results {
 
   span {
     margin-bottom: .5em;
+    text-transform: lowercase;
     color: $color-lightest;
 
     @media (min-width: $mq-xsmall) {
