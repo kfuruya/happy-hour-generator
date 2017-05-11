@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
+
     <title>Happy Hour Generator</title>
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Cookie|Rubik:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- TODO: Swap with SVGs -->
     <style>
       * {
         box-sizing: border-box;
@@ -40,9 +45,9 @@
       }
 
       h1 {
-        margin: 0 auto .5em;
+        margin: 0 auto 2rem;
         font-family: 'Cookie', cursive;
-        font-size: 6em;
+        font-size: 5em;
         line-height: .8;
         text-shadow: 0 0 .5em #000;
         color: #eee;
@@ -54,19 +59,46 @@
         color: #fff;
       }
 
+      form {
+      }
+
       .input {
-        max-width: 18em;
+        max-width: 11em;
         width: 100%;
-        padding: 1em;
+        padding: .5em 1em;
         font-family: 'Rubik', Helvetica, Arial, sans-serif;
-        font-size: 1.5em;
+        font-size: 2.8em;
+        font-weight: 300;
         color: #fff;
         text-align: center;
-        text-transform: uppercase;
         background: transparent;
         border: 0;
         border-bottom: 2px solid #fff;
-        font-weight: 300;
+        transition: border-color .3s ease-out;
+      }
+      .input:focus, .input:hover {
+        border-color: #ffff86;
+        outline: none;
+      }
+
+      .submit {
+        position: absolute;
+        margin-top: 2rem;
+        margin-left: -3.3rem;
+        font-size: 2.5em;
+        width: 1em;
+        height: 1em;
+        color: #ffff86;
+        background: transparent;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform .1s ease-out;
+        transform-origin: center;
+      }
+      .submit:focus, .submit:hover {
+        transform: translateX(5px) skew(-10deg);
+        outline: none;
       }
     </style>
   </head>
@@ -74,7 +106,10 @@
 
     <main class="wrapper">
       <h1>Happy Hour <span>Theme Generator</span></h1>
-      <input class="input" type="text" value="May 12th 2017">
+      <form>
+        <input class="input" type="text" value="May 12th 2017">
+        <button class="submit fa fa-arrow-circle-right" type="submit" aria-label="Go"></button>
+      </form>
     </main>
 
     <!-- Javascript -->
