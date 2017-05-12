@@ -30,5 +30,20 @@ window.themes = {
     "photo": "",
     "restaurant": "",
     "date": "",
-  }
+  },
+  "laser-gun-fight": {
+    "name": "Laser Gun Fight",
+    "drinks": "http://thedrunkenmoogle.com/post/15353279666/the-portal-two-portal-2-cocktails-ingredients",
+    "playlist": "https://embed.spotify.com/?uri=spotify%3Auser%3Acemsso%3Aplaylist%3A5Lg7WvghYdaP1km1J9NCgw",
+    "photo": "https://i.ytimg.com/vi/1_VMRa8BuwI/maxresdefault.jpg",
+    "restaurant": "https://www.mysweetlilcakes.com/menu",
+    "date": "",
+  },
+  "The-1920s": {
+    "name": "1920s Golden Era",
+    "drinks": "http://www.seriouseats.com/recipes/2007/07/cocktails.html",
+    "playlist": "https://embed.spotify.com/?uri=spotify%3Auser%3A12854791%3Aplaylist%3A7BPY9olDBqAnEYCkETaYBu",
+    "photo": "http://stearnslawpllc.com/wp-content/uploads/2015/04/Sorting-Oysters.jpg",
+    "restaurant": "https://www.trycaviar.com/seattle/coastal-kitchen-5462",
+  },
 },
