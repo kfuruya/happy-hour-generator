@@ -1,4 +1,4 @@
-[
+window.restaurants = [
 		"https://www.trycaviar.com/seattle/acadia-5404",
 		"https://www.trycaviar.com/seattle/arayas-place--madison-valley-1831",
 		"https://www.trycaviar.com/seattle/arosa-cafe-3437",

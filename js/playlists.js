@@ -1,4 +1,4 @@
-[
+window.playlists = [
     "https://open.spotify.com/embed?uri=spotify%3Auser%3Athewestwingweekly%3Aplaylist%3A7qDSiqdjGvkymbBp9MJJF8",
     "https://embed.spotify.com/?uri=spotify%3Auser%3Ab.laran%3Aplaylist%3A0JRT16hn8ps2wctKxzrk85",
     "https://embed.spotify.com/?uri=spotify%3Auser%3A1215476764%3Aplaylist%3A5L1hFkWAVa7bF7Ryxw40IS",

@@ -1,4 +1,4 @@
-[
+window.drinks = [
   "https://www.realsimple.com/food-recipes/browse-all-recipes/minty-moscow-mule-punch",
   "http://www.foodandwine.com/recipes/rosemary-ginger-sparkler",
   "http://www.cookinglight.com/recipes/bourbon-mule",

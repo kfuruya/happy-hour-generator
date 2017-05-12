@@ -3,6 +3,7 @@
 var gulp = require("gulp"),
     sass = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
+    concat = require("gulp-concat"),
     uglify = require("gulp-uglify"),
     rename = require("gulp-rename");
 
@@ -21,9 +22,15 @@ gulp.task("css", function() {
   Concat & uglify JS
 -----------------------------------------------*/
 gulp.task("js", function() {
-  return gulp.src("js/script.js")
+  return gulp.src([
+      'js/themes.js',
+      'js/restaurants.js',
+      'js/drinks.js',
+      'js/playlists.js',
+      'js/script.js',
+    ])
+    .pipe(concat('script.min.js'))
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("js"));
 });
 
