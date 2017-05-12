@@ -22,7 +22,7 @@ $(document).ready(function() {
   var themeParam = window.location.search.split('=')[1];
 
   if (themeParam) {
-    var theme = window.themes[theme];
+    var theme = window.themes[themeParam];
 
     // Set title text
     $('#theme').text(theme.name);
