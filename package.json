@@ -1,0 +1,14 @@
+{
+  "name": "happy-hour-generator",
+  "version": "1.0.0",
+  "description": "FRIDAY FRIDAY GOTTA GET ON FRIDAY",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
